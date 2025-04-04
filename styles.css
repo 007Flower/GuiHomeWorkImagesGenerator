@@ -1,0 +1,97 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main content container using grid */
+.container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+    max-width: 95vw;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 25px;
+    align-items: center;
+}
+
+/* Greeting / quote text */
+h1#greeting {
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: 500;
+    line-height: 1.5;
+    max-height: 160px;
+    overflow-y: auto;
+    padding: 0 10px;
+}
+
+/* Image container */
+#imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#imageContainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+button {
+    padding: 14px 30px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #21618c;
+}
+
+button:active {
+    background-color: #1b4f72;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    h1#greeting {
+        font-size: 18px;
+        max-height: 140px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
